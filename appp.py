@@ -1,9 +1,6 @@
 import streamlit as st
-from joblib import dump, load
 import numpy as np
 import pandas as pd
-
-#log_model = load('university_admission.joblib')
 
 def main():
     st.title("Time Travel/Dilation Calculator")
