@@ -75,10 +75,8 @@ def main():
         st.text("\n")
         st.text("\n")
         st.text("\n")
-        st.text("\n")
-        st.text("\n")
-        st.text("\n")
         
+    st.subheader('The Data Points:')    
     st.dataframe(data=df, width=1100, height=500)
         
         
