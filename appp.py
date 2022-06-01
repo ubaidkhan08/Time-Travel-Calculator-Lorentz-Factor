@@ -26,12 +26,17 @@ def main():
     
     st.text("\n")
     st.text("\n")
+    
     st.subheader('Calculate Time Dilation at any Velocity')
-     #if st.button('Calculate Time Dilation at any Velocity'):
-     #if Choice == 'Calculate Time Dilation at any Velocity':
+    
     d = st.slider('Enter Current Velocity (% of speed of light)', 0.000, 100.000) #Current_Velocity
     c = d/100
+    
     if st.button('Calculate Time Dilation'):
+        if d==100:
+            st.text("Time will come to a stop completely. Infinite Dilation!")
+            break
+            
         gamma = (1 / (np.sqrt(1-c*c)))
         gammar = round((1 / (np.sqrt(1-c*c))),3)
         monthz = round((12-(12/gamma)),3)
@@ -39,8 +44,8 @@ def main():
         st.text("Or you will experience: {} lesser month(s) if travelled for 1 year at this speed.".format(monthz))
         st.text("Or you will fast forward in time by: {} month(s).".format(monthz))
     
-    if st.button('Calculate Time Dilation') & d==100:
-        st.text("Time will come to a stop completely. Infinite Dilation!")
+    
+        
         
 if __name__=='__main__':
     main()
