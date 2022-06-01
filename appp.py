@@ -10,11 +10,7 @@ def main():
     """
     st.text("\n")
   
-    st.latex("This calculator uses Lorentz Factor to express how much the
-    measurements of time, length, and other physical properties change for an object
-    while that object is moving at higher relative veolcities. It is generally denoted
-    γ, and is used in Lorentz Transformation, Time Dilation, Length contraction,
-    Relativistic mass, Relativistic momentum, etc!")
+    st.text("This calculator uses Lorentz Factor to express how much the\nmeasurements of time, length, and other physical properties change for an object\nwhile that object is moving at higher relative veolcities. It is generally denoted\nγ, and is used in Lorentz Transformation, Time Dilation, Length contraction,\nRelativistic mass, Relativistic momentum, etc!")
    
     st.text("\n")
     st.text("\n")
