@@ -26,6 +26,8 @@ def main():
     
     st.text("\n")
     st.text("\n")
+    st.text("\n")
+    st.text("\n")
     
     st.subheader('Calculate Time Dilation at any Velocity')
     
