@@ -17,8 +17,8 @@ def main():
     st.text("\n")
   
     
-    data = [[0,1],[0.050,1.001],[0.100,1.005],[0.150,1.011],[0.200,1.021],[0.250,1.033],[0.3,1.048],[0.4,1.091],[0.5,1.154],[0.6,1.25],[0.7,1.400],[0.8,1.66],[0.866,2],[0.9,2.29],[0.95,3.202],[0.99,7.089],[0.992,7.92],[0.995,10.0125],[0.998,15.81],[0.9989,21.32],[0.999,22.366]]     
-    df = pd.DataFrame(data, columns=['Ratio of v to c', 'Lorentz Factor'])
+    data = [[0,1,1.0],[0.050,1.001,0.999],[0.100,1.005,0.995],[0.150,1.011,0.989],[0.200,1.021,0.979],[0.250,1.033,0.968],[0.3,1.048,0.954],[0.4,1.091,0.916],[0.5,1.154,0.866],[0.6,1.25,0.800],[0.7,1.400,0.714],[0.8,1.66,0.602],[0.866,2,0.500],[0.9,2.29,0.436],[0.95,3.202,0.312],[0.99,7.089,0.141],[0.992,7.92,0.126],[0.995,10.0125,0.099],[0.998,15.81,0.0632],[0.9989,21.32,0.046],[0.999,22.366,0.044]]     
+    df = pd.DataFrame(data, columns=['Ratio of v to c', 'Lorentz Factor','Reciprocal'])
     dff = df.set_index('Ratio of v to c')
     
     st.line_chart(data=dff, width=0, height=0, use_container_width=True)
@@ -26,7 +26,9 @@ def main():
     st.text("\n")
     st.text("\n")
     
-    st.dataframe(data=df, width=900, height=500)
+    from PIL import Image
+    image = Image.open('lorentz.svg')
+    st.image(image, caption='The Lorentz factor has the Maclaurin series:')
     
     st.text("\n")
     st.text("\n")
@@ -67,7 +69,11 @@ def main():
         st.text("Or you will experience: {} lesser month(s) if travelled for 1 year at this speed.".format(monthz))
         st.text("Or you will fast forward in time by: {} month(s).".format(monthz))
     
-    
+        st.text("\n")
+        st.text("\n")
+        st.text("\n")
+        
+        st.dataframe(data=df, width=900, height=500)
         
         
 if __name__=='__main__':
