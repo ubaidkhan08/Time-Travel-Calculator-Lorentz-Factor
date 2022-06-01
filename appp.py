@@ -35,7 +35,7 @@ def main():
     if st.button('Calculate Time Dilation'):
         if d==100:
             st.text("Time will come to a stop completely. Infinite Dilation!")
-            break
+            
             
         gamma = (1 / (np.sqrt(1-c*c)))
         gammar = round((1 / (np.sqrt(1-c*c))),3)
