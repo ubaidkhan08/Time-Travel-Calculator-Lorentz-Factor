@@ -18,7 +18,7 @@ def main():
     st.text("\n")
     st.text("\n")
     
-    st.dataframe(data=df, width=80, height=100)
+    st.dataframe(data=df, width=500, height=700)
     
     st.text("\n")
     st.text("\n")
