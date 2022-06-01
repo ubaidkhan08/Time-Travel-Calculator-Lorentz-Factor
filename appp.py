@@ -8,7 +8,19 @@ def main():
     <div style="background-color:black ;padding:30px">
     </div>
     """
+    st.text("\n")
+  
+    st.latex("This calculator uses Lorentz Factor to express how much the
+    measurements of time, length, and other physical properties change for an object
+    while that object is moving at higher relative veolcities. It is generally denoted
+    γ, and is used in Lorentz Transformation, Time Dilation, Length contraction,
+    Relativistic mass, Relativistic momentum, etc!")
    
+    st.text("\n")
+    st.text("\n")
+    st.text("\n")
+  
+    
     data = [[0,1],[0.050,1.001],[0.100,1.005],[0.150,1.011],[0.200,1.021],[0.250,1.033],[0.3,1.048],[0.4,1.091],[0.5,1.154],[0.6,1.25],[0.7,1.400],[0.8,1.66],[0.866,2],[0.9,2.29],[0.990,7.089],[0.999,22.366],[0.9999,70.71],[0.999999,707.10],[0.9999999,2236]]     
     df = pd.DataFrame(data, columns=['Ratio of v to c', 'Lorentz Factor'])
     dff = df.set_index('Ratio of v to c')
@@ -18,7 +30,7 @@ def main():
     st.text("\n")
     st.text("\n")
     
-    st.dataframe(data=df, width=750, height=500)
+    st.dataframe(data=df, width=900, height=500)
     
     st.text("\n")
     st.text("\n")
