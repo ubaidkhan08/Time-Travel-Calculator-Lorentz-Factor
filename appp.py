@@ -23,18 +23,18 @@ def main():
         output = round(((np.sqrt(1 - (1/((a/b)*(a/b)))))*100),3)
         st.success('Your velocity should be: {}% of the speed of light.'.format(output))
     
-    st.text("\n")
-    st.text("\n")
-    st.subheader('Calculate Time Dilation at any Velocity')
-    #if st.button('Calculate Time Dilation at any Velocity'):
-    #if Choice == 'Calculate Time Dilation at any Velocity':
-    c = st.slider('Enter Current Velocity (in m/sec)', 0, 299792458) #Current_Velocity
-    if st.button('Calculate Time Dilation'):
-        gamma = (1 / (np.sqrt(1-c*c)))
-        gammar = round((1 / (np.sqrt(1-c*c))),3)
-        monthz = round((12-(12/gamma)),3)
-        st.success('The Time Dilation would be: {} times'.format(gammar))
-        st.text("Or you will experience: {} lesser month(s).".format(monthz))
+    #st.text("\n")
+    #st.text("\n")
+    #st.subheader('Calculate Time Dilation at any Velocity')
+     #if st.button('Calculate Time Dilation at any Velocity'):
+     #if Choice == 'Calculate Time Dilation at any Velocity':
+    #c = st.slider('Enter Current Velocity (in m/sec)', 0, 299792458) #Current_Velocity
+    #if st.button('Calculate Time Dilation'):
+        #gamma = (1 / (np.sqrt(1-c*c)))
+        #gammar = round((1 / (np.sqrt(1-c*c))),3)
+        #monthz = round((12-(12/gamma)),3)
+        #st.success('The Time Dilation would be: {} times'.format(gammar))
+        #st.text("Or you will experience: {} lesser month(s).".format(monthz))
 
 
 
