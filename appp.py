@@ -36,7 +36,8 @@ def main():
         gammar = round((1 / (np.sqrt(1-c*c))),3)
         monthz = round((12-(12/gamma)),3)
         st.success('The Time Dilation would be: {} times'.format(gammar))
-        st.text("Or you will experience: {} lesser month(s).".format(monthz))
+        st.text("Or you will experience             : {} lesser month(s) if travelled for 1 year at this speed.".format(monthz))
+        st.text("Or you will fast forward in time by: {} month(s).".format(monthz))   
 
 if __name__=='__main__':
     main()
