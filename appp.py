@@ -14,11 +14,14 @@ def main():
     if Choice == 'Necessary Velocity for Time Dilation':
         a = st.slider('How many years of dilation?', 0, 100) #Time_Travel
         b = st.slider('Expendable time before the dilation (lesser the time, more the risk)', 0, 100) #Preferred_Duration
+        if a<b:
+            st.text("Dilation can not be in negative, yet, genius!")
+       
         if st.button('Calculate the Velocity'):
             output = round(((np.sqrt(1 - (1/((a/b)*(a/b)))))*100),3)
             st.success('Your velocity should be: {}% of the speed of light.'.format(output))
 
-    else:
+    if Choice == 'Calculate Time Dilation at any Velocity':
         c = st.slider('Enter Current Velocity (in m/sec)', 0, 299792458) #Current_Velocity
         if st.button('Calculate Time Dilation'):
             gamma = (1 / (np.sqrt(1-c*c)))
