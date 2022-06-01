@@ -27,7 +27,7 @@ def main():
     st.text("\n")
     
     from PIL import Image
-    image = Image.open('lorentz.svg')
+    image = Image.open('White Blue Aesthetic Happy Milk Day Facebook Post (1).png')
     st.image(image, caption='The Lorentz factor has the Maclaurin series:')
     
     st.text("\n")
