@@ -28,6 +28,7 @@ def main():
     
     from PIL import Image
     image = Image.open('White Blue Aesthetic Happy Milk Day Facebook Post (1).png')
+    st.text("\n")
     st.image(image, caption='The Lorentz factor has the Maclaurin series:')
     
     st.text("\n")
