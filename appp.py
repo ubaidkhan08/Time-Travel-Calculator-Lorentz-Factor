@@ -8,11 +8,14 @@ def main():
     <div style="background-color:black ;padding:30px">
     </div>
     """
-
-    #Choice = st.radio("What do you wish to do?",('Necessary Velocity for Time Dilation', 'Calculate Time Dilation at any Velocity'))
+   
+    data = [[0,1],[0.050,1.001],[0.100,1.005],[0.150,1.011],[0.200,1.021],[0.250,1.033],[0.3,1.048],[0.4,1.091],[0.5,1.154],[0.6,1.25],[0.7,1.400],[0.8,1.66],[0.866,2],[0.9,2.29],[0.990,7.089],[0.999,22.366],[0.9999,70.71],[0.999999,707.10],[0.9999999,2236]]     
+    dff = pd.DataFrame(data, columns=['Beta', 'Gamma']) 
     
-    #if st.button('Necessary Velocity for Time Dilation'):
-    #if Choice == 'Necessary Velocity for Time Dilation':
+    st.line_chart(data=dff, width=0, height=0, use_container_width=True)
+    
+    st.text("\n")
+    st.text("\n")
     
     st.subheader('Necessary Velocity for Time Dilation Calculation')
     a = st.slider('How many years of dilation?', 0.0, 1000.0) #Time_Travel
