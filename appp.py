@@ -39,7 +39,7 @@ def main():
         st.text("Or you will experience: {} lesser month(s) if travelled for 1 year at this speed.".format(monthz))
         st.text("Or you will fast forward in time by: {} month(s).".format(monthz))
     
-    if st.button('Calculate Time Dilation') && d==100:
+    if st.button('Calculate Time Dilation') & d==100:
         st.text("Time will come to a stop completely. Infinite Dilation!")
         
 if __name__=='__main__':
