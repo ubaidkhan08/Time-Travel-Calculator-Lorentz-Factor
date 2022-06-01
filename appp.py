@@ -10,7 +10,7 @@ def main():
     """
     st.text("\n")
   
-    st.text("This calculator uses Lorentz Factor to express how much the measurements of time,\nlength, and other physical properties change for an object while that objec\nis moving at higher relative veolcities. It is generally denoted γ, and is used in\nLorentz Transformation, Time Dilation, Length contraction, Relativistic mass,\nRelativistic momentum, etc!")
+    st.text("This calculator uses Lorentz Factor to express how much the measurements of time,\nlength, and other physical properties change for an object while that object\nis moving at higher relative velocities. It is generally denoted by γ, and is used in\nLorentz Transformation, Time Dilation, Length contraction, Relativistic mass,\nRelativistic momentum, etc!")
    
     st.text("\n")
     st.text("\n")
@@ -33,7 +33,9 @@ def main():
     st.text("\n")
     
     st.subheader('Necessary Velocity for Time Dilation Calculation')
+    st.text("\n")
     a = st.slider('How many years of dilation?', 0.0, 1000.0) #Time_Travel
+    st.text("\n")
     b = st.slider('Expendable time in Years before the dilation (lesser the time, more the risk)', 0.0, 100.0) #Preferred_Duration
     if a<b:
         st.text("Dilation can not be in negative, yet, genius!")
@@ -42,6 +44,7 @@ def main():
         output = round(((np.sqrt(1 - (1/((a/b)*(a/b)))))*100),3)
         st.success('Your velocity should be: {}% of the speed of light.'.format(output))
     
+    st.text("\n")
     st.text("\n")
     st.text("\n")
     st.text("\n")
