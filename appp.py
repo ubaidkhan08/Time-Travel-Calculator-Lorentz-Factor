@@ -29,8 +29,8 @@ def main():
     st.subheader('Calculate Time Dilation at any Velocity')
      #if st.button('Calculate Time Dilation at any Velocity'):
      #if Choice == 'Calculate Time Dilation at any Velocity':
-    d = st.slider('Enter Current Velocity (in m/sec)', 0, 299) #Current_Velocity
-    c = d/299792458
+    d = st.slider('Enter Current Velocity (% of speed of light)', 0.000, 100.000) #Current_Velocity
+    c = d/100
     if st.button('Calculate Time Dilation'):
         gamma = (1 / (np.sqrt(1-c*c)))
         gammar = round((1 / (np.sqrt(1-c*c))),3)
