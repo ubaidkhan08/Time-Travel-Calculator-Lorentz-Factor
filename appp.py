@@ -72,6 +72,12 @@ def main():
         st.text("\n")
         st.text("\n")
         st.text("\n")
+        st.text("\n")
+        st.text("\n")
+        st.text("\n")
+        st.text("\n")
+        st.text("\n")
+        st.text("\n")
         
     st.dataframe(data=df, width=1100, height=500)
         
